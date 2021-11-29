@@ -1,4 +1,10 @@
 
+variable "lambda_function_events_filter_prefix_suffix" {
+  description = "lambda function event filter prefix's suffix to listen for CloudTrailEvents"
+  default     = ""
+  type        = string
+}
+
 variable "function_name" {
   description = "Lambda function name"
   default     = "fivexl-cloudtrail-to-slack"
